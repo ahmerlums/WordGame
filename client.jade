@@ -1,0 +1,64 @@
+doctype html
+html
+  head
+    script(src='/socket.io/socket.io.js')
+    script(src='jquery.min.js')  
+    script(src='client.js')
+    style button {height: 50px; width: 50px; font-size: 20pt}
+    style #connect {height: 30px; width: 70px; font-size: 10pt}
+    style #private {display: block;  width: 80px; font-size:20px}
+    style #tid, #t {font-size: 20px; color: red }
+  body
+    input(type='text', id='username') 
+    button(id = 'connect') Connect
+    button(id = 'private') Private Game
+    h2#score Score = 0
+    h3#winner First Round
+    h3#htop Top Three Players
+    p#p1 Less Than Three Players Now!
+    p#p2
+    p#p3
+    p#p4
+    p#p5
+    p#p6
+    p#tid Time Remaining
+    p#t 0 Seconds Left!
+    h4#status
+    table
+      tr
+        td 
+          button(id = 'm0' , class = '')
+        td
+          button#m1
+        td 
+          button#m2
+        td
+          button#m3
+      tr
+        td
+          button#m4
+        td
+          button#m5
+        td
+          button#m6
+        td
+          button#m7
+      tr
+        td
+          button#m8
+        td
+          button#m9
+        td
+          button#m10
+        td
+          button#m11
+      tr
+        td
+          button#m12
+        td
+          button#m13
+        td
+          button#m14
+        td
+          button#m15
+    #message
